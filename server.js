@@ -23,4 +23,8 @@ db.once('open', () => console.log('Connected to Mongoose'));
 app.use('/', indexRouter);
 
 app.listen(process.env.PORT || 3000);
+<<<<<<< HEAD
 // heafskasdasd
+=======
+// asdasfas
+>>>>>>> 5397086e9fa7328d94d90fbbb3d88f2b3ff9b1fb
