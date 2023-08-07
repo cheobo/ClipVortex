@@ -5,7 +5,7 @@
         <div class="post-container content-container post-margin">
             <header class="headerbar">
                 <% if (post.userpicID) { %>
-                    <img class="user-icon" src="profile/pic/<%= post.userpicID %>" alt="">
+                    <img class="user-icon" src="/profile/pic/<%= post.userpicID %>" alt="">
                 <% } else { %>
                     <img class="user-icon" src="images/no-profile-icon.png" alt="">
                 <% } %>
@@ -26,7 +26,7 @@
                     <div class="engagements-container">
                         
                         <span class="like-button <%= user.likes && user.likes.indexOf(post._id) !== -1 ? 'toggled' : '' %>" id="like-btn-<%= post._id %>" data-postID="<%= post._id %>" data-liked="<%= post.isLiked %>"> 
-                            <img src="images/like-icon.png">
+                            <img src="/images/like-icon.png">
                         </span>
                         <div class="engagements"> 
                             <% if (post.num_likes) { %>
