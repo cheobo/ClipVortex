@@ -1,0 +1,48 @@
+.profile-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-pic {
+    width: 100px;
+	height: 100px;
+    border-radius: 50%;
+}
+
+.profile-banner {
+    margin-left: 20px;
+    height: 100px;
+    width: 967px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 20px;
+}
+
+.profile-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.profile-bio {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.post-container {
+    margin-bottom: 30px !important; 
+}
+
+.post-margin {
+    margin-top: 10px;
+}

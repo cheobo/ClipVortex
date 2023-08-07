@@ -1,5 +1,25 @@
 <!-- template.ejs -->
-<div class="spacer"></div>
+<div class="content-container">
+    <div class="profile-container">
+
+        <% if (user.profilePicFileId) { %>
+            <img class="profile-pic" src="/profile/pic/<%= user.profilePicFileId %>" alt="">
+        <% } else { %>
+            <img class="profile-pic" src="/images/no-profile-icon.png" alt="">
+        <% } %>
+        <div class="profile-info">
+            <a class="edit-profile-btn nav-link" href="profile/edit">Edit Profile</a> 
+            <div class="profile-name"><%= user.name %></div>
+            <div class="profile-bio"><%= user.bio %></div>
+            <div class="profile-stats">
+                <span>Likes <%= user.num_likes %> </span>
+                <span>Clips <%= user.num_clips %> </span>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
 <% if (posts) { %>
     <% posts.forEach(post => { %>
         <div class="post-container content-container post-margin">
@@ -40,9 +60,9 @@
                             <img src="/images/comment-icon.png">
                         </span>
                         <div class="engagements">
-                            <span class="comments-count"> <%= post.num_comments%>  </span>Comments
-                        </div> -->
-                        
+                            <span class="comments-count"> <%=post.num_comments%> </span>Comments
+                        </div>
+                         -->
                     </div>
                 </div>                
             </footer>
@@ -68,6 +88,7 @@
         
         <% }) %>
 <% } %>
+
 
 <script>
     // Add event listeners after the DOM is loaded
@@ -103,4 +124,3 @@
         });
     });
 </script>
-

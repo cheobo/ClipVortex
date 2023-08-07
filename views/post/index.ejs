@@ -1,0 +1,25 @@
+<div class="container content-container ">
+    <div class="row">
+        <div class="col-md-6 m-auto">
+            <h1 class="text-center display-4 my-4"> Throw your clip into the Vortex </h1>
+        </div>
+        <form class="upload-form" action="/post/upload" enctype="multipart/form-data" method="POST">
+            <div class="custom-file">
+                <input class="custom-file-input" type="file" name="file" id="file" class="file-selector-button" accept=".mp4" required>
+                <label for="title">Title: </label>
+                <input type="text" name="title" id="title" required>
+                <label for="game-name">Game: </label>
+                <select id="game-name" name="game_name" required>
+                    <% categories.forEach(element => { %>
+                        <option value = '<%= element.name %>'> <%= element.name %> </option>
+                    <% }) %>
+                </select>
+                <label class="description-label" for="description">Description: </label>
+                <input type="text" name="description" id="description" required>
+            </div>
+            <div class="text-center"> <%= message %></div>
+            <button type="submit" value="Submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+    
+</div>

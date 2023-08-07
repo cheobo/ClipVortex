@@ -1,0 +1,20 @@
+<div class="container content-container ">
+    <div class="row">
+        <div class="col-md-6 m-auto">
+            <h1 class="text-center display-4 my-4"> Personalize your profile </h1>
+        </div>
+        <form class="upload-form" action="/profile/edit" enctype="multipart/form-data" method="POST">
+            <div class="custom-file">
+                <label for="file_pfp">Change Profile Picture:</label>
+                <input class="custom-file-input" type="file" name="file_pfp" id="file_pfp" class="file-selector-button" accept="image/*">
+                <label for="username">Change Username: </label>
+                <input type="text" name="username" id="username">
+                <label for="bio">Update your Bio: </label>
+                <input type="text" name="bio" id="bio">
+            </div>
+            <div class="text-center"> <%= message %></div>
+            <button type="submit" value="Submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+    
+</div>

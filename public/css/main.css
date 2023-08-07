@@ -1,0 +1,332 @@
+.bg-darkgrey {
+    background-color: var(--primary-color) !important;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.brand-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 5px;
+}
+
+.search-container-size {
+    justify-content: left !important;
+    width: 50% !important;
+}
+
+form#search-form {
+    width: 100% !important;
+    font-size: small;
+    
+    
+}
+input#search-input  {
+    width: 70% !important; 
+    padding-left: 10px;
+    outline: none;
+}
+
+form#search-form {
+    width: 100% !important;
+    font-size: small;
+}
+
+#searchForm {
+    margin-bottom: 20px;
+  }
+  
+  #searchResults {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: var(--primary-color);
+    margin-top: 80px;
+    border-radius: 20px;
+    width: 1280px;
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .headerbar {
+    display: flex;
+    background-color: #66FCF1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 20px;
+    color: var(--primary-color);
+    justify-content: left;
+    height: 80px;
+    align-items: center;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+
+  .user-icon {
+    width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: var(--bs-body-bg);
+    align-content: center;
+  }
+
+  .user-info-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .user-name {
+    font-size: x-large;
+  }
+
+  .game-name {
+    font-size: smaller;
+  }
+  .content {
+    box-sizing: border-box;
+    height: 80%;
+    width: 100%;
+
+  }
+
+  .content-video {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: 66FCF1;
+  }
+
+  .content-title {
+    font-size: 25px;
+  }
+  .content-footer {
+    height: 20%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .interactions-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .engagements-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+  }
+
+  .engagements > .likes-count, .comments-count, .views-count{
+    font-weight:100;
+    padding-right: 5px;
+  }
+
+  .engagements {
+    padding-right: 20px;
+  }
+
+  .like-button, .comment-button{
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    height: 60px;
+    transform: background-position 0.3s ease;
+    cursor: pointer;
+    
+  }
+
+  .like-button:hover {
+    background-image: url(/images/like-icon-hover.png);
+  }
+
+  .like-button.toggled {
+    background-image: url(/images/like-icon-hover.png) !important; 
+  }
+
+  .comment-button:hover {
+    background-image: url(/images/comment-icon-hover.png);
+  }
+
+  .comments-container{
+    display: none;
+    transition: max-height 0.3s ease;
+    flex-direction: column;
+    margin: auto;
+    background-color: var(--primary-color);
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 1280px;
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .comments-container.show {
+    max-height: 200px; 
+  }
+
+  .user-comment-icon {
+    width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--bs-body-bg);
+    align-content: center;
+    margin-right: 10px;
+  }
+
+  .comment {
+    padding: 15px;
+  }
+  .user-comment-info {
+    font-size: large;
+  }
+
+  .user-comment {
+    font-size: large;
+  }
+
+  .comments-footer {
+    padding-top: 30px;
+    font-weight: bold;
+  }
+
+  .add-comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #comment-area-1, #comment-area-2, #comment-area-3, #comment-area-4, #comment-area-5{
+    padding: 10px;
+    resize: none;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+
+  #nav-link-login {
+    cursor: pointer;
+  }
+  
+  #login-popup {
+    display: none;
+    bottom: 20px;
+    width: 100;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+
+  .login-popup-content {
+    position: absolute;
+    top: 100%;
+    left: 68%;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #nav-link-register {
+    cursor: pointer;
+  }
+
+  #register-popup {
+    display: none;
+    bottom: 20px;
+    width: 100;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+
+  .register-popup-content {
+    position: absolute;
+    top: 100%;
+    left: 68%;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+
+  .close-button:hover {
+    color: #66FCF1;
+  }
+
+  #login-form {
+    margin-top: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .upload-form {
+    display: grid;
+    justify-content: center;
+    
+  }
+
+  .custom-file {
+    display:contents;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .custom-file-input {
+    border-color: grey;
+    border-width: 10px;
+  }
+
+  .description-label {
+    margin-top: 10px;
+  }
+
+  .spacer {
+    margin-top: 75px;
+  }
+
+  

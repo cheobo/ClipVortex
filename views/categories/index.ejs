@@ -1,0 +1,11 @@
+<div class="categories-container">  
+
+    <% categories.forEach(category => { %>
+        <a class="game-link" id="game" href="categories/game/<%=category.name%>"> 
+            <div class="game-container"> 
+                <img class = "game-image" src="data:<%= category.picture.contentType %>;base64,<%= category.picture.data.toString('base64') %>" alt="">
+                <div class="game-title"> <%=category.name%> </div>
+            </div>
+        </a>
+    <% }) %>
+    

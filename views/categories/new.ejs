@@ -15,8 +15,8 @@
                 </div>
             </header>
             
-            <div class="content" id="video-containter">
-                <video class="content-video" src="/video/<%= post.fileId %>" controls></video>   
+            <div class="content">
+                <video class="content-video" id="video-containter" src="/video/<%= post.fileId %>" controls></video>   
             </div>
             
             <footer class="content-footer">
@@ -69,6 +69,8 @@
         <% }) %>
 <% } %>
 
+
+
 <script>
     // Add event listeners after the DOM is loaded
     document.addEventListener('DOMContentLoaded', async () => {
@@ -103,4 +105,3 @@
         });
     });
 </script>
-
