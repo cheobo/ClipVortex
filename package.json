@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
     "cookie-parser": "^1.4.6",
@@ -27,7 +28,6 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "dotenv": "^16.3.1",
     "nodemon": "^3.0.1"
   }
 }
