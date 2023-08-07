@@ -5,6 +5,7 @@ const Post = require('../models/post');
 const { GridFSBucket, ObjectId } = require('mongodb');
 const { MongoClient } = require('mongodb');
 const mongodb = require('mongodb')
+require('dotenv').config();
 
 
 module.exports = function (gfs, profilepfp_upload) {
@@ -103,7 +104,7 @@ module.exports = function (gfs, profilepfp_upload) {
         const filename = req.params.filename;
       
         try {
-          const client = await MongoClient.connect('mongodb://localhost:27017', {
+          const client = await MongoClient.connect(process.env.DATABASE_URL, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
           });

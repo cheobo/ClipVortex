@@ -6,6 +6,7 @@ const bcrypt = require('bcrypt');
 const { GridFSBucket, ObjectId } = require('mongodb');
 const { MongoClient } = require('mongodb');
 const mongodb = require('mongodb')
+require('dotenv').config();
 
 
 // All Users Route
@@ -193,7 +194,7 @@ router.get('/logout', async(req, res) => {
     const filename = req.params.filename;
   
     try {
-      const client = await MongoClient.connect('mongodb://localhost:27017', {
+      const client = await MongoClient.connect(process.env.DATABASE_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       });
